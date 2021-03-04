@@ -40,7 +40,7 @@ The following table lists all possible fields:
 | `symptom` | Which symptoms apply to you (all that apply)? | `COUGH \| CHEST_PAIN \| BREATHING_DIFFICULTIES \| SORE_THROAT \| ACUTE_RESPIRATORY_DISEASE \| ANOSMIA \| AGEUSIA \| FEVER \| CONFUSED \| GASTROINTESTINAL_SYMPTOMS \| HEADACHE \| MUSCLE_ACHE \| SKIN_RASH` (multiple times allowed, e. g. `symptom=COUGH&symptom=SORE_THROAT`) |
 | `otherSymptom` | Other symptoms | `string` |
 | `startOfSymptoms` | When did the symptoms first appear? | `date` (format: YYYY-MM-DD, e. g. `2020-12-31`) |
-| `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES | HEART_DISEASE | IMMUNE_SUPPRESSION | KIDNEY_DISEASE | HYPERTENSION | CHRONIC_RESPIRATORY_DISEASE | CANCER | OBESITY | LIVER_DISEASE` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
+| `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES \| HEART_DISEASE \| IMMUNE_SUPPRESSION \| KIDNEY_DISEASE \| HYPERTENSION \| CHRONIC_RESPIRATORY_DISEASE \| CANCER \| OBESITY \| LIVER_DISEASE` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
 | `otherDisease` | Other disease | `string` |
 | `isPregnant` | Are you pregnant or is there a chance you might be pregnant? | `boolean` |
 | `isSmoker` | Smoker | `boolean` |
