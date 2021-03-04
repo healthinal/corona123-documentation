@@ -24,12 +24,12 @@ The following table lists all possible fields:
 | `lastName` | Surname | `string` |
 | `nationality` | Nationality | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `CH`) |
 | `dateOfBirth` | Date of birth | `date` (format: YYYY-MM-DD, e. g. `2020-12-31`) |
-| `gender` | Gender | `FEMALE | MALE | OTHER` |
+| `gender` | Gender | `FEMALE \| MALE \| OTHER` |
 | `street` | Street, house number | `string` |
 | `postalCode` | Postcode | `string` |
 | `city` | Place | `string` |
-| `canton` | Canton | `ZH | BE | LU | UR | SZ | OW | NW | GL | ZG | FR | SO | BS | BL | SH | AR | AI | SG | GR | AG | TG | TI | VD | VS | NE | GE | JU` |
-| `maritalStatus` | Marital status | `SINGLE | MARRIED | WIDOWED | SEPARATED | DIVORCED` |
+| `canton` | Canton | `ZH \| BE \| LU \| UR \| SZ \| OW \| NW \| GL \| ZG \| FR \| SO \| BS \| BL \| SH \| AR \| AI \| SG \| GR \| AG \| TG \| TI \| VD \| VS \| NE \| GE \| JU` |
+| `maritalStatus` | Marital status | `SINGLE \| MARRIED \| WIDOWED \| SEPARATED \| DIVORCED` |
 | `phone` | Mobile phone | `string` |
 | `email` | E-mail | `string` |
 | `generalPractitioner` | General practitioner | `string` |
@@ -37,25 +37,25 @@ The following table lists all possible fields:
 | `healthInsurance` | Health insurance | `string` |
 | `countryOfResidence` | Country of residence | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `CH`) |
 | `worksAsMedicalStaff` | Do you work in health care in direct contact with patients? | `boolean` |
-| `symptom` | Which symptoms apply to you (all that apply)? | `COUGH | CHEST_PAIN | BREATHING_DIFFICULTIES | SORE_THROAT | ACUTE_RESPIRATORY_DISEASE | ANOSMIA | AGEUSIA | FEVER | CONFUSED | GASTROINTESTINAL_SYMPTOMS | HEADACHE | MUSCLE_ACHE | SKIN_RASH` (multiple times allowed, e. g. `symptom=COUGH&symptom=SORE_THROAT`) |
+| `symptom` | Which symptoms apply to you (all that apply)? | `COUGH \| CHEST_PAIN \| BREATHING_DIFFICULTIES \| SORE_THROAT \| ACUTE_RESPIRATORY_DISEASE \| ANOSMIA \| AGEUSIA \| FEVER \| CONFUSED \| GASTROINTESTINAL_SYMPTOMS \| HEADACHE \| MUSCLE_ACHE \| SKIN_RASH` (multiple times allowed, e. g. `symptom=COUGH&symptom=SORE_THROAT`) |
 | `otherSymptom` | Other symptoms | `string` |
 | `startOfSymptoms` | When did the symptoms first appear? | `date` (format: YYYY-MM-DD, e. g. `2020-12-31`) |
 | `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES | HEART_DISEASE | IMMUNE_SUPPRESSION | KIDNEY_DISEASE | HYPERTENSION | CHRONIC_RESPIRATORY_DISEASE | CANCER | OBESITY | LIVER_DISEASE` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
 | `otherDisease` | Other disease | `string` |
 | `isPregnant` | Are you pregnant or is there a chance you might be pregnant? | `boolean` |
 | `isSmoker` | Smoker | `boolean` |
-| `reasonForTest` | Why are you getting a COVID-19 test? | `COVID19_SYMPTOMS | BREAKOUT_INVESTIGATION | SWISS_COVID_APP | OTHER` |
+| `reasonForTest` | Why are you getting a COVID-19 test? | `COVID19_SYMPTOMS \| BREAKOUT_INVESTIGATION \| SWISS_COVID_APP \| OTHER` |
 | `otherReasonForTest` | Other reason for testing | `string` (has only relevance if `reasonForTest` is equal to `OTHER`) |
 | `expositionLand` | Have you been abroad in the last 14 days? | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `DE`, `CH` indicates the person was not abroad) |
 | `expositionCity` | Location where you are staying | `string` |
-| `transportation` | How did you travel abroad? | `AIR_PLANE | SHIP | TRAIN | BUS | CAR` (multiple times allowed, e. g. `transportation=SHIP&transportation=BUS`) |
+| `transportation` | How did you travel abroad? | `AIR_PLANE \| SHIP \| TRAIN \| BUS \| CAR` (multiple times allowed, e. g. `transportation=SHIP&transportation=BUS`) |
 | `otherTransportation` | Other means of transport | `string` |
 | `isInNursingHome` | Do you live in a retirement or care home? | `boolean` |
 | `nursingHomeName` | Name of the retirement or care home | `string` |
 | `nursingHomePhone` | Telephone number of the retirement or care home, format: 0XX XXX XX XX | `string` |
 | `contactWithPositive` | Have you been in close contact with a lab-confirmed COVID-19 case? | `boolean` |
 | `inQuarantineBefore` | Are you in quarantine? | `boolean` |
-| `pathOfInfection` | In the event of a positive test result, which transmission route do you think is the most likely? | `FAMILY | MEDICAL_STAFF | PRIVATE_PARTY | CLUB | RESTAURANT | SPONTANEOUS_GATHERING | SCHOOL | DEMONSTRATION | WORK | UNKNOWN | OTHER` |
+| `pathOfInfection` | In the event of a positive test result, which transmission route do you think is the most likely? | `FAMILY \| MEDICAL_STAFF \| PRIVATE_PARTY \| CLUB \| RESTAURANT \| SPONTANEOUS_GATHERING \| SCHOOL \| DEMONSTRATION \| WORK \| UNKNOWN \| OTHER` |
 | `otherPathOfInfection` | Other transmission route | `string` (has only relevance if `pathOfInfection` is equal to `OTHER`) |
 | `expositionDay` | When is it most likely that the infection occurred? | `date` (format: YYYY-MM-DD, e. g. `2020-12-31`) |
 | `profession` | Other professional activity | `string` |
@@ -81,12 +81,12 @@ The following table lists all possible fields:
 | `lastName` | Surname | `string` |
 | `nationality` | Nationality | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `CH`) |
 | `dateOfBirth` | Date of birth | `date` (format: YYYY-MM-DD, e. g. `2020-12-31`) |
-| `gender` | Gender | `FEMALE | MALE | OTHER` |
+| `gender` | Gender | `FEMALE \| MALE \| OTHER` |
 | `street` | Street, house number | `string` |
 | `postalCode` | Postcode | `string` |
 | `city` | Place | `string` |
-| `canton` | Canton | `ZH | BE | LU | UR | SZ | OW | NW | GL | ZG | FR | SO | BS | BL | SH | AR | AI | SG | GR | AG | TG | TI | VD | VS | NE | GE | JU` |
-| `maritalStatus` | Marital status | `SINGLE | MARRIED | WIDOWED | SEPARATED | DIVORCED` |
+| `canton` | Canton | `ZH \| BE \| LU \| UR \| SZ \| OW \| NW \| GL \| ZG \| FR \| SO \| BS \| BL \| SH \| AR \| AI \| SG \| GR \| AG \| TG \| TI \| VD \| VS \| NE \| GE \| JU` |
+| `maritalStatus` | Marital status | `SINGLE \| MARRIED \| WIDOWED \| SEPARATED \| DIVORCED` |
 | `phone` | Mobile phone | `string` |
 | `email` | E-mail | `string` |
 | `generalPractitioner` | General practitioner | `string` |
@@ -104,4 +104,4 @@ The following table lists all possible fields:
 | `hadCovidVaccination` | Have you already had a COVID-19 vaccine? | `boolean` |
 | `isCurrentlyBreastfeeding` | Are you currently breastfeeding? | `boolean` |
 | `wantsVaccinationCertificate` | Do you want the vaccination to be entered in your electronic vaccination card (meineimpfungen.ch/myCOVIDvac.ch)? If you do not yet have an electronic vaccination card, this will be created for you during the registration process. All information on the electronic vaccination card can be found at [myCOVIDvac.ch](https://www.myCOVIDvac.ch). | `boolean` |
-| `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES | HEART_DISEASE | IMMUNE_SUPPRESSION | KIDNEY_DISEASE | HYPERTENSION | CHRONIC_RESPIRATORY_DISEASE | CANCER | OBESITY | LIVER_DISEASE` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
+| `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES \| HEART_DISEASE \| IMMUNE_SUPPRESSION \| KIDNEY_DISEASE \| HYPERTENSION \| CHRONIC_RESPIRATORY_DISEASE \| CANCER \| OBESITY \| LIVER_DISEASE` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
