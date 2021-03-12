@@ -90,6 +90,7 @@ The following table lists all possible fields:
 | `phone` | Mobile phone | `string` |
 | `email` | E-mail | `string` |
 | `generalPractitioner` | General practitioner | `string` |
+| `okpInsured` | Are you OKP insured (in Switzerland)? | `boolean` |
 | `identityNumberInsurance` | Insurance number | `string` |
 | `healthInsurance` | Health insurance | `string` |
 | `countryOfResidence` | Country of residence | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `CH`) |
