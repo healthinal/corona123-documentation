@@ -40,7 +40,7 @@ The following table lists all possible fields:
 | `symptom` | Which symptoms apply to you (all that apply)? | `COUGH \| CHEST_PAIN \| BREATHING_DIFFICULTIES \| SORE_THROAT \| ACUTE_RESPIRATORY_DISEASE \| ANOSMIA \| AGEUSIA \| FEVER \| CONFUSED \| GASTROINTESTINAL_SYMPTOMS \| HEADACHE \| MUSCLE_ACHE \| SKIN_RASH` (multiple times allowed, e. g. `symptom=COUGH&symptom=SORE_THROAT`) |
 | `otherSymptom` | Other symptoms | `string` |
 | `startOfSymptoms` | When did the symptoms first appear? | `date` (format: YYYY-MM-DD, e. g. `2020-12-31`) |
-| `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES \| HEART_DISEASE \| IMMUNE_SUPPRESSION \| KIDNEY_DISEASE \| HYPERTENSION \| CHRONIC_RESPIRATORY_DISEASE \| CANCER \| OBESITY \| LIVER_DISEASE` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
+| `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES \| HEART_DISEASE \| IMMUNE_SUPPRESSION \| KIDNEY_DISEASE \| HYPERTENSION \| CHRONIC_RESPIRATORY_DISEASE \| CANCER \| OBESITY \| LIVER_DISEASE \| TRISOMY_21` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
 | `otherDisease` | Other disease | `string` |
 | `isPregnant` | Are you pregnant or is there a chance you might be pregnant? | `boolean` |
 | `isSmoker` | Smoker | `boolean` |
@@ -105,4 +105,4 @@ The following table lists all possible fields:
 | `hadCovidVaccination` | Have you already had a COVID-19 vaccine? | `boolean` |
 | `isCurrentlyBreastfeeding` | Are you currently breastfeeding? | `boolean` |
 | `wantsVaccinationCertificate` | Do you want the vaccination to be entered in your electronic vaccination card (meineimpfungen.ch/myCOVIDvac.ch)? If you do not yet have an electronic vaccination card, this will be created for you during the registration process. All information on the electronic vaccination card can be found at [myCOVIDvac.ch](https://www.myCOVIDvac.ch). | `boolean` |
-| `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES \| HEART_DISEASE \| IMMUNE_SUPPRESSION \| KIDNEY_DISEASE \| HYPERTENSION \| CHRONIC_RESPIRATORY_DISEASE \| CANCER \| OBESITY \| LIVER_DISEASE` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
+| `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES \| HEART_DISEASE \| IMMUNE_SUPPRESSION \| KIDNEY_DISEASE \| HYPERTENSION \| CHRONIC_RESPIRATORY_DISEASE \| CANCER \| OBESITY \| LIVER_DISEASE \| TRISOMY_21` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
