@@ -11,7 +11,7 @@ To prefill the test form a link has to be constructed using the base URL `https:
 The data to prefill has to be passed as GET parameters as the following example demonstrates:
 
 ```
-https://corona123.ch/corona-test-form-prefill/4b2037ca-4639-48f7-a662-501895c03d57?testDate=2021-03-04&firstName=Werner&lastName=Huber&nationality=CH&dateOfBirth=1964-10-04&gender=MALE&street=Seitenweg%2011&postalCode=8640&city=Rapperswil&canton=SG&maritalStatus=SINGLE&phone=0764561212&email=test@example.com&generalPractitioner=Dr.%20Meier&identityNumberInsurance=12412412412412&healthInsurance=Helsana&countryOfResidence=DE&worksAsMedicalStaff=false&isPregnant=true&otherSymptom=Anderes%20Symptom&startOfSymptoms=2021-03-03&otherDisease=Anderes&isSmoker=false&reasonForTest=OTHER&otherReasonForTest=AnderereGrund&expositionLand=DE&expositionCity=Berlin&otherTransportation=Rollen&isInNursingHome=true&nursingHomeName=Heim&nursingHomePhone=0552441212&contactWithPositive=false&inQuarantineBefore=true&pathOfInfection=FAMILY&otherPathOfInfection=Kein&expositionDay=2021-03-02&profession=Informatik&note=Notiz&disease=OBESITY&symptom=COUGH&symptom=CHEST_PAIN&transportation=AIR_PLANE
+https://corona123.ch/corona-test-form-prefill/4b2037ca-4639-48f7-a662-501895c03d57?testDate=2021-03-04&firstName=Werner&lastName=Huber&nationality=CH&dateOfBirth=1964-10-04&gender=MALE&street=Seitenweg%2011&postalCode=8640&city=Rapperswil&canton=SG&maritalStatus=SINGLE&phone=0764561212&email=test@example.com&generalPractitioner=Dr.%20Meier&identityNumberInsurance=12412412412412&healthInsurance=Helsana&countryOfResidence=DE&worksAsMedicalStaff=false&isPregnant=true&otherSymptom=Anderes%20Symptom&startOfSymptoms=2021-03-03&otherDisease=Anderes&isSmoker=false&reasonForTest=OTHER&otherReasonForTest=AnderereGrund&expositionLand=DE&expositionCity=Berlin&isInNursingHome=true&nursingHomeName=Heim&nursingHomePhone=0552441212&contactWithPositive=false&inQuarantineBefore=true&pathOfInfection=FAMILY&otherPathOfInfection=Kein&expositionDay=2021-03-02&profession=Informatik&note=Notiz&disease=OBESITY&symptom=COUGH&symptom=CHEST_PAIN
 ```
 
 The only **required field** is `testDate` as it is currently not possible to edit this afterwards.
@@ -37,7 +37,7 @@ The following table lists all possible fields:
 | `healthInsurance` | Health insurance | `string` |
 | `countryOfResidence` | Country of residence | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `CH`) |
 | `worksAsMedicalStaff` | Do you work in health care in direct contact with patients? | `boolean` |
-| `symptom` | Which symptoms apply to you (all that apply)? | `COUGH \| CHEST_PAIN \| BREATHING_DIFFICULTIES \| SORE_THROAT \| ACUTE_RESPIRATORY_DISEASE \| ANOSMIA \| AGEUSIA \| FEVER \| CONFUSED \| GASTROINTESTINAL_SYMPTOMS \| HEADACHE \| MUSCLE_ACHE \| SKIN_RASH` (multiple times allowed, e. g. `symptom=COUGH&symptom=SORE_THROAT`) |
+| `symptom` | Which symptoms apply to you (all that apply)? | `COUGH \| CHEST_PAIN \| BREATHING_DIFFICULTIES \| SORE_THROAT \| ACUTE_RESPIRATORY_DISEASE \| ANOSMIA \| AGEUSIA \| FEVER \| CONFUSED \| GASTROINTESTINAL_SYMPTOMS` (multiple times allowed, e. g. `symptom=COUGH&symptom=SORE_THROAT`) |
 | `otherSymptom` | Other symptoms | `string` |
 | `startOfSymptoms` | When did the symptoms first appear? | `date` (format: YYYY-MM-DD, e. g. `2020-12-31`) |
 | `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES \| HEART_DISEASE \| IMMUNE_SUPPRESSION \| KIDNEY_DISEASE \| HYPERTENSION \| CHRONIC_RESPIRATORY_DISEASE \| CANCER \| OBESITY \| LIVER_DISEASE \| TRISOMY_21` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
@@ -48,8 +48,6 @@ The following table lists all possible fields:
 | `otherReasonForTest` | Other reason for testing | `string` (has only relevance if `reasonForTest` is equal to `OTHER`) |
 | `expositionLand` | Have you been abroad in the last 14 days? | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `DE`, `CH` indicates the person was not abroad) |
 | `expositionCity` | Location where you are staying | `string` |
-| `transportation` | How did you travel abroad? | `AIR_PLANE \| SHIP \| TRAIN \| BUS \| CAR` (multiple times allowed, e. g. `transportation=SHIP&transportation=BUS`) |
-| `otherTransportation` | Other means of transport | `string` |
 | `isInNursingHome` | Do you live in a retirement or care home? | `boolean` |
 | `nursingHomeName` | Name of the retirement or care home | `string` |
 | `nursingHomePhone` | Telephone number of the retirement or care home, format: 0XX XXX XX XX | `string` |
