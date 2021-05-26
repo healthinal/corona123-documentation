@@ -37,7 +37,7 @@ The following table lists all possible fields:
 | `healthInsurance` | Health insurance | `string` |
 | `countryOfResidence` | Country of residence | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `CH`) |
 | `worksAsMedicalStaff` | Do you work in health care in direct contact with patients? | `boolean` |
-| `symptom` | Which symptoms apply to you (all that apply)? | `COUGH \| CHEST_PAIN \| BREATHING_DIFFICULTIES \| SORE_THROAT \| ACUTE_RESPIRATORY_DISEASE \| ANOSMIA \| AGEUSIA \| FEVER \| CONFUSED \| GASTROINTESTINAL_SYMPTOMS \| HEADACHE \| MUSCLE_ACHE \| SKIN_RASH` (multiple times allowed, e. g. `symptom=COUGH&symptom=SORE_THROAT`) |
+| `symptom` | Which symptoms apply to you (all that apply)? | `COUGH \| CHEST_PAIN \| BREATHING_DIFFICULTIES \| SORE_THROAT \| ACUTE_RESPIRATORY_DISEASE \| ANOSMIA \| AGEUSIA \| FEVER \| CONFUSED \| GASTROINTESTINAL_SYMPTOMS` (multiple times allowed, e. g. `symptom=COUGH&symptom=SORE_THROAT`) |
 | `otherSymptom` | Other symptoms | `string` |
 | `startOfSymptoms` | When did the symptoms first appear? | `date` (format: YYYY-MM-DD, e. g. `2020-12-31`) |
 | `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES \| HEART_DISEASE \| IMMUNE_SUPPRESSION \| KIDNEY_DISEASE \| HYPERTENSION \| CHRONIC_RESPIRATORY_DISEASE \| CANCER \| OBESITY \| LIVER_DISEASE \| TRISOMY_21` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
@@ -48,8 +48,6 @@ The following table lists all possible fields:
 | `otherReasonForTest` | Other reason for testing | `string` (has only relevance if `reasonForTest` is equal to `OTHER`) |
 | `expositionLand` | Have you been abroad in the last 14 days? | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `DE`, `CH` indicates the person was not abroad) |
 | `expositionCity` | Location where you are staying | `string` |
-| `transportation` | How did you travel abroad? | `AIR_PLANE \| SHIP \| TRAIN \| BUS \| CAR` (multiple times allowed, e. g. `transportation=SHIP&transportation=BUS`) |
-| `otherTransportation` | Other means of transport | `string` |
 | `isInNursingHome` | Do you live in a retirement or care home? | `boolean` |
 | `nursingHomeName` | Name of the retirement or care home | `string` |
 | `nursingHomePhone` | Telephone number of the retirement or care home, format: 0XX XXX XX XX | `string` |
