@@ -14,12 +14,11 @@ The data to prefill has to be passed as GET parameters as the following example 
 https://corona123.ch/corona-test-form-prefill/4b2037ca-4639-48f7-a662-501895c03d57?testDate=2021-03-04&firstName=Werner&lastName=Huber&nationality=CH&dateOfBirth=1964-10-04&gender=MALE&street=Seitenweg%2011&postalCode=8640&city=Rapperswil&canton=SG&maritalStatus=SINGLE&phone=0764561212&email=test@example.com&generalPractitioner=Dr.%20Meier&identityNumberInsurance=12412412412412&healthInsurance=Helsana&countryOfResidence=DE&worksAsMedicalStaff=false&isPregnant=true&otherSymptom=Anderes%20Symptom&startOfSymptoms=2021-03-03&otherDisease=Anderes&isSmoker=false&reasonForTest=OTHER&otherReasonForTest=AnderereGrund&expositionLand=DE&expositionCity=Berlin&isInNursingHome=true&nursingHomeName=Heim&nursingHomePhone=0552441212&contactWithPositive=false&inQuarantineBefore=true&pathOfInfection=FAMILY&otherPathOfInfection=Kein&expositionDay=2021-03-02&profession=Informatik&note=Notiz&disease=OBESITY&symptom=COUGH&symptom=CHEST_PAIN
 ```
 
-The only **required field** is `testDate` as it is currently not possible to edit this afterwards.
-
 The following table lists all possible fields:
 
 | Name | Label (on corona123.ch) | Type |
 | --- | --- | --- |
+| `testDate` | Test date, default = _today_ | `date` (format: YYYY-MM-DD, e. g. `2020-12-31`) |
 | `firstName` | First Name | `string` |
 | `lastName` | Surname | `string` |
 | `nationality` | Nationality | `string` (valid ISO 3166-1 alpha-2 country code, e. g. `CH`) |
