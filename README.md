@@ -98,8 +98,9 @@ The following table lists all possible fields:
 | `hasAllergies` | In the past, have you experienced severe allergic reactions to drugs or vaccines? | `boolean` |
 | `hasCurrentlyColdSymptoms` | Are you currently experiencing cold symptoms (temperature, feeling poorly, sore throat, cough, body aches) or changes in taste/smell? | `boolean` |
 | `takesAnticoagulants` | Are you taking anti-coagulants ('blood thinners')? | `boolean` |
-| `hadCovidInTheLast90Days` | Have you been diagnosed with COVID-19 in the past 90 days? | `boolean` |
-| `hadCovidVaccination` | Have you already had a COVID-19 vaccine? | `boolean` |
+| `hadCovid` | Have you been diagnosed with COVID-19 in the past? | `boolean` |
+| `numberOfVaccinations` | How many COVID-19 vaccinations have you had already? | `number` |
+| `previousVaccine` | Which COVID-19 vaccines have you had already? Shown in UI if `numberOfVaccinations > 0`. | `BIONTECH \| BIONTECH_10 \| MODERNA \| JNJ \| OTHER_MRNA \| OTHER` (multiple times allowed if `numberOfVaccinations > 1`, e. g. `previousVaccine=JNJ&previousVaccine=MODERNA`) |
+| `dateOfLatestVaccination` | Date of latest vaccination, shown in UI if `numberOfVaccinations > 0`. | `date` (format: YYYY-MM-DD, e. g. `2022-02-22`) |
 | `isCurrentlyBreastfeeding` | Are you currently breastfeeding? | `boolean` |
-| `wantsVaccinationCertificate` | Do you want the vaccination to be entered in your electronic vaccination card (meineimpfungen.ch/myCOVIDvac.ch)? If you do not yet have an electronic vaccination card, this will be created for you during the registration process. All information on the electronic vaccination card can be found at [myCOVIDvac.ch](https://www.myCOVIDvac.ch). | `boolean` |
 | `disease` | Which diseases/therapies apply to you (all that apply)? | `DIABETES \| HEART_DISEASE \| IMMUNE_SUPPRESSION \| KIDNEY_DISEASE \| HYPERTENSION \| CHRONIC_RESPIRATORY_DISEASE \| CANCER \| OBESITY \| LIVER_DISEASE \| TRISOMY_21` (multiple times allowed, e. g. `disease=LIVER_DISEASE&disease=CANCER`) |
